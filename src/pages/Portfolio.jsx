@@ -4,12 +4,6 @@ import Reveal from '../components/Reveal';
 import projects from '../data/projects.json';
 
 const Portfolio = () => {
-  const projectImgs = {
-    iotdashboardimg: '../public/img/iotdashboard_img.png',
-    mentealternativaimg: '../public/img/mentealternativa_img.png',
-    feclubimg: '../public/img/feclub_img.png',
-  };
-
   return (
     <div className="max-w-[1000px] mx-auto p-6 md:my-20" id="portfolio">
       <h2 className="text-3xl font-bold text-gray-200 mb-8">Portfolio</h2>
@@ -23,7 +17,7 @@ const Portfolio = () => {
           >
             <div className="w-full md:w-1/2 p-4">
               <img
-                src={projectImgs[project.img]}
+                src={`../${project.img}`}
                 alt={project.title}
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />

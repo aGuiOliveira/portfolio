@@ -1,7 +1,7 @@
 [
   {
     "id": "feclub",
-    "img": "feclubimg",
+    "img": "./public/img/feclub_img.png",
     "title": "Fe-Club",
     "fulldescription": "FE-Club is an immersive and dynamic game specifically designed to attract and engage fans of all ages. By integrating gamification elements with the exciting Formula E experience, FE-Club offers players the opportunity to immerse themselves in the world of electric racing in an entirely new and interactive way.",
     "description": "Webgame dedicated to the Formula E",
@@ -19,7 +19,7 @@
   },
   {
     "id": "mentealternativa",
-    "img": "mentealternativaimg",
+    "img": "./public/img/mentealternativa_img.png",
     "title": "Mente Alternativa",
     "description": "A website that aims to provide tools and information to help you with everyday problems.",
     "fulldescription": "Mente Alternativa is a website that aims to provide tools and information to help you with everyday problems. We are committed to providing correct information in the simplest and most direct way, without forgetting about quality, so that you can use our services without worry. The idea for this website came about with a simple purpose: Helping people directly with what they need. ",
@@ -31,7 +31,7 @@
   },
   {
     "id": "iotdashboard",
-    "img": "iotdashboardimg",
+    "img": "./public/img/iotdashboard_img.png",
     "title": "IoT Dashboard",
     "description": "An application developed to capture and monitor the environment of a wine cellar",
     "fulldescription": "The objective of this project is to use advanced sensors to measure the temperature, humidity and luminosity of an environment. This monitoring is important to ensure the correct conservation and maintenance of Vinheria Agnello wines.",

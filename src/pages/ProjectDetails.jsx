@@ -19,12 +19,6 @@ export default function ProjectDetails() {
 
   const project = data.find((project) => project.id == id);
 
-  const projectImgs = {
-    iotdashboardimg: '../public/img/iotdashboard_img.png',
-    mentealternativaimg: '../public/img/mentealternativa_img.png',
-    feclubimg: '../public/img/feclub_img.png',
-  };
-
   const technologyIcons = {
     DiHtml5: <DiHtml5 />,
     DiCss3: <DiCss3 />,
@@ -50,7 +44,7 @@ export default function ProjectDetails() {
                 <div className="w-5/6">
                   <div className="text-gray-300 my-3">
                     <img
-                      src={projectImgs[project.img]}
+                      src={`../${project.img}`}
                       alt={project.title}
                       className="w-full h-full object-cover rounded-lg shadow-lg"
                     />
