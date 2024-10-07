@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const Navbar = () => {
+export default function Header() {
   const [nav, setNav] = useState(false);
 
   const toggleNav = () => {
@@ -37,23 +37,17 @@ const Navbar = () => {
         className="max-w-[1300px] mx-auto  flex justify-between text-gray-200
         text-xl items-center px-12 h-20"
       >
-        <a href="#">Guilherme Oliveira</a>
+        <NavLink to="/">Guilherme Oliveira</NavLink>
 
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
           <li>
-            <Link to="skills" smooth={true} offset={50} duration={500}>
-              About
-            </Link>
+            <NavLink to="about">About</NavLink>
           </li>
           <li>
-            <Link to="portfolio" smooth={true} offset={50} duration={500}>
-              Portfolio
-            </Link>
+            <NavLink to="portfolio">Portfolio</NavLink>
           </li>
           <li>
-            <Link to="contact" smooth={true} offset={50} duration={500}>
-              Contact
-            </Link>
+            <NavLink to="contact">Contact</NavLink>
           </li>
         </ul>
 
@@ -69,43 +63,23 @@ const Navbar = () => {
         >
           <ul className="font-semibold text-4xl space-y-8 mt-24 text-center">
             <li>
-              <Link
-                to="skills"
-                onClick={closeNav}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
+              <NavLink to="about" onClick={closeNav}>
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to="portfolio"
-                onClick={closeNav}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
+              <NavLink to="portfolio" onClick={closeNav}>
                 Portfolio
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to="contact"
-                onClick={closeNav}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
+              <NavLink to="contact" onClick={closeNav}>
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </motion.div>
       </div>
     </div>
   );
-};
-
-export default Navbar;
+}

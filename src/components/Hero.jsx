@@ -1,6 +1,5 @@
 import profilepic from '../assets/profilepic.jpeg';
 import { TypeAnimation } from 'react-type-animation';
-import ShinyEffect from './ShinyEffect';
 import {
   AiOutlineGithub,
   AiOutlineInstagram,
@@ -18,7 +17,7 @@ import { RiTailwindCssFill } from 'react-icons/ri';
 
 const Hero = () => {
   return (
-    <div className="mt-24 max-w-[1200px] mx-auto relative">
+    <div className="mx-auto relative">
       <div className="grid md:grid-cols-2 place-items-center gap-8">
         <motion.img
           src={profilepic}
@@ -33,7 +32,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
         >
           <TypeAnimation
             sequence={[
@@ -53,7 +52,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 1, delay: 0.2 }}
             className="text-gray-200 md:text-7xl text-5xl tracking-tight mb-4"
           >
             HEY, I AM <br />
@@ -64,7 +63,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
             className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
           >
             I am a passionate software engineering student.
@@ -74,7 +73,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1.5 }}
+            transition={{ duration: 1, delay: 0.5 }}
             className="flex flex-row items-center gap-6 my-4 md:mb-0"
           >
             <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
@@ -107,7 +106,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, delay: 2 }}
+        transition={{ duration: 0.2, delay: 0.8 }}
         className="flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
       >
         <p className="text-gray-200 mr-6">My Tech Stack</p>
@@ -118,10 +117,6 @@ const Hero = () => {
         <DiBootstrap className="text-violet-700 mx-2" />
         <RiTailwindCssFill className="text-sky-400 mx-2" />
       </motion.div>
-
-      <div className="absolute inset-0 hidden md:block">
-        <ShinyEffect left={0} top={0} size={1400} />
-      </div>
     </div>
   );
 };
