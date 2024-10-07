@@ -1,4 +1,4 @@
-import profilepic from '../assets/profilepic.jpeg';
+import profilepic from '../../public/img/profilepic.jpeg';
 import { TypeAnimation } from 'react-type-animation';
 import {
   AiOutlineGithub,

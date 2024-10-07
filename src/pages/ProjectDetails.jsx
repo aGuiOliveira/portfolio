@@ -20,9 +20,9 @@ export default function ProjectDetails() {
   const project = data.find((project) => project.id == id);
 
   const projectImgs = {
-    iotdashboardimg: '../src/assets/iotdashboard_img.png',
-    mentealternativaimg: '../src/assets/mentealternativa_img.png',
-    feclubimg: '../src/assets/feclub_img.png',
+    iotdashboardimg: '../public/img/iotdashboard_img.png',
+    mentealternativaimg: '../public/img/mentealternativa_img.png',
+    feclubimg: '../public/img/feclub_img.png',
   };
 
   const technologyIcons = {
