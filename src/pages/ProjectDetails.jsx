@@ -44,7 +44,7 @@ export default function ProjectDetails() {
                 <div className="w-5/6">
                   <div className="text-gray-300 my-3">
                     <img
-                      src={`../${project.img}`}
+                      src={project.img}
                       alt={project.title}
                       className="w-full h-full object-cover rounded-lg shadow-lg"
                     />

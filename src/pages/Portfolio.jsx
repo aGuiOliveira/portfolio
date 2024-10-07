@@ -17,7 +17,7 @@ const Portfolio = () => {
           >
             <div className="w-full md:w-1/2 p-4">
               <img
-                src={`../${project.img}`}
+                src={project.img}
                 alt={project.title}
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
