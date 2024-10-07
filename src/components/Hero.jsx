@@ -107,15 +107,19 @@ const Hero = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.2, delay: 0.8 }}
-        className="flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
+        className="flex flex-col md:flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
       >
-        <p className="text-gray-200 mr-6">My Tech Stack</p>
-        <DiHtml5 className="text-orange-600 mx-2" />
-        <DiCss3 className="text-blue-600 mx-2" />
-        <DiJavascript1 className="text-yellow-500 mx-2" />
-        <DiReact className="text-blue-500 mx-2" />
-        <DiBootstrap className="text-violet-700 mx-2" />
-        <RiTailwindCssFill className="text-sky-400 mx-2" />
+        <div>
+          <p className="text-gray-200 md:mr-6">My Tech Stack</p>
+        </div>
+        <div className="flex flex-wrap justify-center">
+          <DiHtml5 className="text-orange-600 mx-2" />
+          <DiCss3 className="text-blue-600 mx-2" />
+          <DiJavascript1 className="text-yellow-500 mx-2" />
+          <DiReact className="text-blue-500 mx-2" />
+          <DiBootstrap className="text-violet-700 mx-2" />
+          <RiTailwindCssFill className="text-sky-400 mx-2" />
+        </div>
       </motion.div>
     </div>
   );

@@ -1,19 +1,25 @@
 import Reveal from './Reveal';
 
 export default function ContactForm() {
+  function handleContact(event) {
+    event.preventDefault();
+    console.log(event.target.name.value);
+    console.log(event.target.email.value);
+    console.log(event.target.textarea.value);
+  }
+
   return (
     <div className="px-6 max-w-[1200px] mx-auto md:my-12" id="contact">
       <Reveal>
         <div className="grid lg:grid-cols-1 place-items-center">
           <form
-            action="https://getform.io/f/placeYourEndpointHere"
-            method="POST"
-            className=" w-full p-5 md:p-12"
+            onSubmit={handleContact}
+            className="w-full p-5 md:p-12"
             id="form"
           >
-            <p className="text-gray-100 font-bold text-xl mb-2">
-              Let´s connect!
-            </p>
+            <h2 className="text-5xl font-bold mb-4 text-center text-white">
+              Lets contact
+            </h2>
             <input
               type="text"
               id="name"
